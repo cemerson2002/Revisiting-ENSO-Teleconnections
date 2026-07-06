@@ -1,0 +1,19 @@
+&netcdf_infile
+  in_dir   = "/unity/f1/cemerson/data/surface_precip/"
+  in_fname = "daily_CRU_temp.nc"
+  ivarname  = "tmp"
+  tname = "time"
+  levname = "level"
+  level_val = 500
+/
+
+&netcdf_outfile
+  out_dir  = "/unity/f1/cemerson/"
+  out_fname = "CRU_12_filtered_temp.nc"
+  ovarname = "temp"
+  var_lname = "Near surface temperature"
+  var_units = "Degrees Celsius"
+  time_units = "months since 1901-01-01 00:00:00"
+  time_calendar = "360_day"
+  fill_value = -9999.0
+/
